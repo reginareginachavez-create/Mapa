@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 10px;
+        }
+
+        h1, h2 {
+            color: #b3a000;
+        }
+
+        .horario {
+            width: 100%;
+            overflow-x: auto;
+        }
+
+        table {
+            margin: 20px auto;
+            border-spacing: 3px;
+            width: 100%;
+            min-width: 850px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #4A4A4A;
+            color: white;
+        }
+
+        .hora {
+            background-color: #0080FF;
+            color: white;
+            white-space: nowrap;
+        }
+
+        .web {
+            background-color: #00C853;
+            color: white;
+        }
+
+        .android {
+            background-color: #FF9100;
+            color: white;
+        }
+
+        .cliente {
+            background-color: #FF1744;
+            color: white;
+        }
+
+        .servidor {
+            background-color: #AA00FF;
+            color: white;
+        }
+
+        .receso {
+            background-color: #D5D5D5;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Tablas HTML</h1>
+    <hr>
+    <p><a href="maqueta.html" target="_top">Regresar al menú principal</a></p>
+
+    <h2>Mi horario de clases</h2>
+
+    <div class="horario">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>HORA</th>
+                    <th>LUNES</th>
+                    <th>AULA</th>
+                    <th>MARTES</th>
+                    <th>AULA</th>
+                    <th>MIÉRCOLES</th>
+                    <th>AULA</th>
+                    <th>JUEVES</th>
+                    <th>AULA</th>
+                    <th>VIERNES</th>
+                    <th>AULA</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="hora">07:00-07:50</td>
+                    <td class="web">Pág. Web<br>403</td>
+                    <td>F3</td>
+                    <td class="android">Android<br>605</td>
+                    <td>L1</td>
+                    <td class="web">Pág. Web<br>403</td>
+                    <td>F3</td>
+                    <td class="cliente">A Cliente<br>403</td>
+                    <td>SC3</td>
+                    <td class="web">Pág. Web<br>403</td>
+                    <td>SC2</td>
+                </tr>
+                <tr>
+                    <td class="hora">07:50-08:40</td>
+                    <td class="android">Android<br>605</td>
+                    <td>E5</td>
+                    <td class="servidor">A Server<br>403</td>
+                    <td>SC3</td>
+                    <td class="cliente">A Cliente<br>403</td>
+                    <td>F3</td>
+                    <td class="android">Android<br>605</td>
+                    <td>E5</td>
+                    <td class="android">Android<br>605</td>
+                    <td>L1</td>
+                </tr>
+                <tr>
+                    <td class="hora">08:40-09:30</td>
+                    <td class="cliente">A Cliente<br>403</td>
+                    <td>SC3</td>
+                    <td class="servidor">A Server<br>403</td>
+                    <td>SC3</td>
+                    <td class="cliente">A Cliente<br>403</td>
+                    <td>F3</td>
+                    <td class="servidor">A Server<br>403</td>
+                    <td>L1</td>
+                    <td class="servidor">A Server<br>403</td>
+                    <td>F3</td>
+                </tr>
+                <tr>
+                    <td class="hora">09:30-10:20</td>
+                    <td class="android">iOS<br>605</td>
+                    <td>E5</td>
+                    <td class="cliente">A Cliente<br>404</td>
+                    <td>F4</td>
+                    <td class="android">Android<br>605</td>
+                    <td>E5</td>
+                    <td class="servidor">A Server<br>403</td>
+                    <td>L1</td>
+                    <td class="cliente">A Cliente<br>404</td>
+                    <td>F4</td>
+                </tr>
+                <tr>
+                    <td class="hora">10:20-10:40</td>
+                    <td class="receso" colspan="10">RECESO</td>
+                </tr>
+                <tr>
+                    <td class="hora">10:40-11:30</td>
+                    <td class="cliente">A Cliente<br>403</td>
+                    <td>L1</td>
+                    <td class="cliente">A Cliente<br>404</td>
+                    <td>SC2</td>
+                    <td class="servidor">A Server<br>403</td>
+                    <td>F3</td>
+                    <td class="cliente">A Cliente<br>404</td>
+                    <td>F4</td>
+                    <td class="android">Android<br>605</td>
+                    <td>L1</td>
+                </tr>
+                <tr>
+                    <td class="hora">11:30-12:20</td>
+                    <td class="cliente">A Cliente<br>403</td>
+                    <td>L1</td>
+                    <td class="android">iOS<br>605</td>
+                    <td>L1</td>
+                    <td class="cliente">A Cliente<br>404</td>
+                    <td>F4</td>
+                    <td class="android">iOS<br>605</td>
+                    <td>E5</td>
+                    <td class="android">Android<br>605</td>
+                    <td>L1</td>
+                </tr>
+                <tr>
+                    <td class="hora">12:20-13:10</td>
+                    <td class="servidor">A Server<br>403</td>
+                    <td>F3</td>
+                    <td class="android">iOS<br>605</td>
+                    <td>L1</td>
+                    <td class="android">iOS<br>605</td>
+                    <td>E5</td>
+                    <td class="web">Pág. Web<br>403</td>
+                    <td>L1</td>
+                    <td class="cliente">A Cliente<br>403</td>
+                    <td>F3</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

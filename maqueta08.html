@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario HTML</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            color: #4a2929;
+        }
+
+        h1 {
+            color: brown;
+        }
+
+        form {
+            max-width: 550px;
+            margin: 25px auto;
+            text-align: left;
+        }
+
+        .campo {
+            margin-bottom: 16px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 9px;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        textarea {
+            min-height: 90px;
+            resize: vertical;
+        }
+
+        .fecha {
+            display: flex;
+            gap: 8px;
+        }
+
+        .fecha select {
+            min-width: 0;
+        }
+
+        .botones {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            width: auto;
+            padding: 10px 22px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"] {
+            background-color: brown;
+            color: white;
+        }
+
+        input[type="reset"] {
+            background-color: #dddddd;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>FORMULARIO HTML</h1>
+    <hr>
+
+    <p>
+        <a href="maqueta.html" target="_top">Regresar al menú principal</a>
+    </p>
+
+    <form action="#" method="get">
+
+        <div class="campo">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div class="campo">
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+        </div>
+
+        <div class="campo">
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+        </div>
+
+        <div class="campo">
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono">
+        </div>
+
+        <div class="campo">
+            <label>Fecha de nacimiento:</label>
+            <div class="fecha">
+                <select name="dia" aria-label="Día">
+                    <option value="">Día</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>26</option>
+                    <option>27</option>
+                    <option>28</option>
+                    <option>29</option>
+                    <option>30</option>
+                    <option>31</option>
+                </select>
+
+                <select name="mes" aria-label="Mes">
+                    <option value="">Mes</option>
+                    <option>Enero</option>
+                    <option>Febrero</option>
+                    <option>Marzo</option>
+                    <option>Abril</option>
+                    <option>Mayo</option>
+                    <option>Junio</option>
+                    <option>Julio</option>
+                    <option>Agosto</option>
+                    <option>Septiembre</option>
+                    <option>Octubre</option>
+                    <option>Noviembre</option>
+                    <option>Diciembre</option>
+                </select>
+
+                <select name="anio" aria-label="Año">
+                    <option value="">Año</option>
+                    <option>2000</option>
+                    <option>2001</option>
+                    <option>2002</option>
+                    <option>2003</option>
+                    <option>2004</option>
+                    <option>2005</option>
+                    <option>2006</option>
+                    <option>2007</option>
+                    <option>2008</option>
+                    <option>2009</option>
+                    <option>2010</option>
+                    <option>2011</option>
+                    <option>2012</option>
+                    <option>2013</option>
+                    <option>2014</option>
+                    <option>2015</option>
+                    <option>2016</option>
+                    <option>2017</option>
+                    <option>2018</option>
+                    <option>2019</option>
+                    <option>2020</option>
+                    <option>2021</option>
+                    <option>2022</option>
+                    <option>2023</option>
+                    <option>2024</option>
+                    <option>2025</option>
+                    <option>2026</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="campo">
+            <label for="facebook">Link de Facebook:</label>
+            <input type="url" id="facebook" name="facebook" placeholder="https://...">
+        </div>
+
+        <div class="campo">
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" required>
+        </div>
+
+        <div class="campo">
+            <label for="observaciones">Observaciones:</label>
+            <textarea id="observaciones" name="observaciones"></textarea>
+        </div>
+
+        <div class="campo">
+            <label for="hermanos">Número de hermanos:</label>
+            <input type="number" id="hermanos" name="hermanos" min="0">
+        </div>
+
+        <div class="campo">
+            <label for="genero">Género:</label>
+            <select id="genero" name="genero">
+                <option value="">Selecciona</option>
+                <option>Femenino</option>
+                <option>Masculino</option>
+                <option>Otro</option>
+            </select>
+        </div>
+
+        <div class="campo">
+            <label for="semestre">Semestre:</label>
+            <select id="semestre" name="semestre">
+                <option value="">Selecciona</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+            </select>
+        </div>
+
+        <div class="campo">
+            <label for="carrera">Carrera:</label>
+            <input list="carreras" id="carrera" name="carrera">
+            <datalist id="carreras">
+                <option value="Informática">
+                <option value="Administración">
+                <option value="Contabilidad">
+                <option value="Programación">
+                <option value="Diseño">
+            </datalist>
+        </div>
+
+        <input type="hidden" name="matricula" value="123456">
+
+        <div class="botones">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </div>
+
+    </form>
+
+</body>
+</html>
