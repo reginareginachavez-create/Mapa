@@ -3,9 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EXAMEN</title>
-    <link rel="stylesheet" href="css/maqueta.css">
+    <title>Examen</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            background-color: #fffafa;
+        }
+
+        header {
+            height: 98px;
+            min-height: 98px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #800020;
+            color: white;
+            flex-shrink: 0;
+        }
+
+        header h1 {
+            margin: 0;
+            text-align: center;
+        }
+
+        main {
+            display: flex;
+            flex: 1;
+            min-height: 0;
+            overflow: hidden;
+        }
+
+        aside {
+            width: 138px;
+            min-width: 138px;
+            padding: 15px 5px;
+            background-color: #ead2d5;
+            border-right: 2px solid #a64d61;
+            flex-shrink: 0;
+        }
+
+        .boton {
+            display: block;
+            width: 100%;
+            min-height: 43px;
+            margin: 8px 0;
+            padding: 10px 3px;
+            background-color: #800020;
+            color: white;
+            border: 1px solid #b76e79;
+            border-radius: 7px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .boton:hover {
+            background-color: #a63d55;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            min-width: 0;
+            min-height: 0;
+            padding: 15px;
+            background-color: #fffafa;
+            overflow: hidden;
+        }
+
+        section h2 {
+            margin: 15px 0 20px;
+            color: #800020;
+            text-align: center;
+            flex-shrink: 0;
+        }
+
+        iframe {
+            width: 100%;
+            flex: 1;
+            min-width: 0;
+            min-height: 0;
+            border: 1px solid #d8a7af;
+            background-color: white;
+        }
+
+        footer {
+            height: 100px;
+            min-height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #800020;
+            color: white;
+            flex-shrink: 0;
+        }
+
+        footer h1 {
+            margin: 0;
+        }
+    </style>
 </head>
+
 <body>
 
     <header>
@@ -18,28 +130,24 @@
             <a class="boton" href="maqueta02.html" target="contenido">HOBBIES</a>
             <a class="boton" href="maqueta03.html" target="contenido">TABLA</a>
             <a class="boton" href="maqueta04.html" target="contenido">TIM</a>
-            <a class="boton" href="maqueta05.html" target="ccs">CCS</a>
-            <a class="boton" href="maqueta06.html" target="infografia">INFORMACIÓN</a>
+            <a class="boton" href="maqueta05.html" target="contenido">Infografia</a>
+            <a class="boton" href="maqueta06.html" target="contenido">CSS</a>
             <a class="boton" href="maqueta08.html" target="contenido">FORMULARIO</a>
-            
-            
-           
         </aside>
-        
-           
 
         <section>
-            <h1>CONTENIDO</h1>
+            <h2>CONTENIDO</h2>
 
             <iframe
                 name="contenido"
-                title="Páginas del examen">
+                src="biografia.html"
+                title="Contenido de la práctica">
             </iframe>
         </section>
     </main>
 
     <footer>
-        <h1>PIE</h1>
+        <h1>Regina Kristen Ruiz Chavez</h1>
     </footer>
 
 </body>
